@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/*Header Inicio*/
+header {
+    background-image: url('../img/background-with-white-round-lines.jpg');
+    min-height: 700px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-topo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav.menu-mobile {
+    display: none;
+}
+
+nav.menu-mobile h3 {
+    font-size: 30px;
+    cursor: pointer;
+}
+nav.menu-mobile ul {
+    display: block;
+    background-color: #B3B6B7;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999999;
+}
+nav.menu-mobile li{border-bottom: 2px solid #ff5f27; padding: 15px 0;}
+nav.menu-mobile li a{
+    color: white;
+    text-decoration: none;
+}
+nav.menu-mobile li a:hover {
+    color: #ff5f27;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+nav.menu-desktop > ul {
+    list-style: none;
+}
+nav.menu-desktop > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.menu-desktop > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+nav.menu-desktop > ul > li > a:hover {
+    color: #ff5f27;
+    transition: 0.4s;
+}
+nav.menu-desktop li.btn-nav {
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+nav.menu-desktop li.btn-nav:hover {
+    border: 1px solid #ff5f27;
+    transition: 0.4s;
+}
+div.chamada-header {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0;
+    margin-left: 150px;
+}
+div.chamada-header h2 {
+    font-size: 47px;
+    font-weight: normal;
+    color: #31475e;
+}
+
+div.chamada-header p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #31475e;
+}
+div.chamada-header form {margin-top: 15px;}
+div.chamada-header input[type=email] {
+    width: 300px;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px 15px;
+}
+
+div.chamada-header input[type=submit]{
+    width: 181px;
+    height: 35px;
+    background-color: #ff5f27;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+div.chamada-header input[type=submit]:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+/*Header Fim*/
+/*Section Descricao Inicio*/
+section.descricao {
+    text-align: center;
+    padding: 30px 0;
+}
+
+section.descricao p{
+    display: inline-block;
+    max-width: 680px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 22px;
+}
+
+/*Section Descricao Fim*/
+/*Section Descricao-Service Inicio*/
+section.descricao-service {
+    padding: 30px 0;
+}
+div.descricao-texto{
+    justify-content: center;
+    padding: 0 4%;
+    margin-top: 50px;
+}
+div.descricao-texto h3 {
+    color: #31475e;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+div.descricao-texto p {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #6a7c92;
+}
+
+div.descricao-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.w50 {
+    width: 50%;
+}
+.descricao-img {
+    max-width: 600px;
+    max-height: 350px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.descricao-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*Section Descricao-Service Fim*/
+/*Section Workplace Inicio*/
+section.workplace {
+    padding: 50px 0;
+}
+
+section.workplace .container {
+    max-width: 960px;
+    background-image: url('../img/working.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    border-radius: 20px;
+    padding: 0 4%;
+    position: relative;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.box-depoimento {
+    position: absolute;
+    left: 60%;
+    bottom: -30px;
+    width: 70%;
+    max-width: 406px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 1px solid #ff5f27;
+}
+.box-depoimento p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #31475e;
+}
+
+/*Section Workplace Fim*/
+/*Section Services Inicio*/
+section.services {
+    padding: 30px 0;
+}
+
+section.services > .container {
+    max-width: 960px;
+}
+
+.title-services {
+    text-align: center;
+    font-size: 22px;
+    color: #31475e;
+}
+
+.flex-services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-services img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box-services {
+    width: 33.3%;
+    background-color:#c7ccce;
+    border-radius: 20px;
+    border: 10px solid white;
+}
+
+.box-services-wrapper {
+    padding: 30px;
+}
+.box-services-wrapper h2 {
+    color: #31475e;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.box-services-wrapper p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-weight: lighter;
+    color: #6a7c92;
+    font-size: 15px;
+}
+.box-services-wrapper a {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #6a7c92;
+    color: #6a7c92;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.box-services-wrapper a:hover {
+    color: #ff5f27;
+    transition: 0.4s;
+    border: 1px solid #ff5f27;
+}
+/*Section Services Fim*/
+/*Section Portifolio Inicio*/
+section.portifolio > .container {
+    max-width: 960px;
+}
+
+section.portifolio h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #31475e;;
+}
+
+div.empresas {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.empresa-single {
+    margin:0 35px;
+    border: 1px solid #6a7c92;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+div.empresa-single:hover {
+    background-color: #ff5f27;
+    transition: 0.4s;
+}
+
+div.empresa-single > img {
+    width: 100px;
+    height: 100px;
+}
+/*Section Portifolio Fim*/
+/*Section Formulario Inicio*/
+section.form {
+    padding: 50px 0;
+}
+
+section.form > .container {
+    max-width: 760px;
+}
+
+section.form h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #31475e;
+}
+section.form form {
+    margin: 20px 0;
+}
+
+section.form input[type=text],[type=email],[type=tel]{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    resize: vertical;
+    border: 1px solid #6a7c92;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+section.form input[type=submit] {
+    width: 181px;
+    height: 35px;
+    background-color: #ff5f27;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section.form input[type=submit]:hover {
+    color: white;
+    transition: 0.4s;
+}
+section.form textarea {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #6a7c92;
+    padding: 6px 12px;
+}
+input:focus, textarea {
+    outline: none;
+}
+/*Section Formulario Fim*/
+/*Section Footer Inicio*/
+footer {
+    border-top: 2px solid #31475e;
+}
+
+footer > .container {
+    max-width: 960px;
+}
+footer .flex-footer {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+.flex-footer h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #31475e;
+}
+.flex-footer p {
+    font-size: 15px;
+    color: #6a7c92;
+}
+.flex-footer a{
+    font-size: 15px;
+    color: #6a7c92;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.flex-footer a:hover {
+    color: #ff5f27;
+    transition: 0.4s;
+}
+
+footer .footer-single {
+    padding: 0 10px;
+}
+/*Section Footer Fim*/
+
+/*Midias Query*/
+
+@media screen and (max-width:1024px) {
+    nav.menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+    }
+
+    nav.menu-mobile ul {
+        display: none;
+    }
+    div.chamada-header {
+        text-align: center;
+        margin-left: 0;
+    }
+    div.chamada-header input[type=email]{
+        margin-bottom: 10px;
+    } 
+    .box-depoimento {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        max-width: 406px;
+        background-color: white;
+        padding: 10px 30px;
+        border: 1px solid #ff5f27;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .w50 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .descricao-texto {
+        margin-bottom: 15px;
+    }
+    .box-services {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    footer .flex-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footer-single {
+        margin-top: 10px;
+    }
+}
